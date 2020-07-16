@@ -1,0 +1,25 @@
+# Terrafrom-code
+
+
+ec2 Terraform code
+
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "AKIAXSNQFCA4LKM52PUR"
+  secret_key = "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"
+}
+
+
+resource "aws_instance" "newInstance"{
+  ami = "ami-052c08d70def0ac62"
+  instance_type="t2.micro"
+}
+
+
+
+Commands:
+terrafrom init
+terrafrom plan
+terraform apply
+
+
